@@ -11,7 +11,8 @@ class MP3Importer
 
     #Dir.glob("#{path}/*.mp3").collect{ |f| f.gsub("#{path}/", "") }
     files = Dir["#{path}/*.mp3"]
-    filename = files.split("/")
+    print files
+    #filename = files.split("/")
   end
 
   def import
