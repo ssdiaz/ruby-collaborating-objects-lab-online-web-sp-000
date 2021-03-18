@@ -7,9 +7,7 @@ class MP3Importer
   end
 
   def files
-  #  Dir "#{path}/.mp3"
-
-    #Dir.glob("#{path}/*.mp3").collect{ |f| f.gsub("#{path}/", "") }
+    #solution : Dir.glob("#{path}/*.mp3").collect{ |f| f.gsub("#{path}/", "") }
     files = Dir["#{path}/*.mp3"]
     filename_array = []
     files.each do |i_file|
