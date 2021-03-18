@@ -15,6 +15,7 @@ class MP3Importer
     files.each do |i|
       filename_array << i.split("/")[-1]
     #filename = files.split("/")
+    filename_array
   end
   end
 
